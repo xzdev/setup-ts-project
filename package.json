@@ -1,0 +1,30 @@
+{
+  "name": "setup-ts-project",
+  "version": "0.0.1",
+  "description": "The template for quickly setting up a typescript project",
+  "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
+  "files": [
+    "build/src"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "gts check",
+    "clean": "gts clean",
+    "build": "tsc -p .",
+    "fix": "gts fix",
+    "prepare": "yarn build",
+    "pretest": "yarn build",
+    "posttest": "yarn check"
+  },
+  "devDependencies": {
+    "@types/node": "^10.0.3",
+    "gts": "^1.1.2",
+    "prettier-eslint": "^9.0.1",
+    "prettier-stylelint": "^0.4.2",
+    "prettier-tslint": "^0.4.2",
+    "typescript": "~3.7.0"
+  }
+}
